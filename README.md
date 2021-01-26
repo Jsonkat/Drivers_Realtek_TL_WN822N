@@ -1,6 +1,6 @@
 
 
-# [+]  I Found This Driver By Random Googling Hope It Helps  [+]
+# [+]  Found This Driver By Random Googling Hope It Helps  [+]
 
 
 
