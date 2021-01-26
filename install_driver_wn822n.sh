@@ -26,7 +26,8 @@ printf "\n${MAGEN}[*] Current Directory :: $(pwd) \n\n${WHITE}$(ls)\n"
 printf "\n\n\n${YELLOW}[+] Enter To Continue...."
 read rd2
 
-printf "\n\n\n${GREEN}[*] Installing Drivers... \n\n\n"
+clear
+printf "\n\n\n${GREEN}[*] Building and Installing DKMS... \n\n\n"
 sudo dkms add .;
 sudo dkms install rtl8192eu/1.0;
 
@@ -34,13 +35,13 @@ echo "blacklist rtl8xxxu" | sudo tee /etc/modprobe.d/rtl8xxxu.conf;
 echo -e "8192eu\n\nloop" | sudo tee /etc/modules;
 echo "options 8192eu rtw_power_mgnt=0 rtw_enusbss=0" | sudo tee /etc/modprobe.d/8192eu.conf;
 
-printf "\n\n\n${YELLOW}[+] Updating Grub & Updating Initramfs [+]\n\n\n"
+printf "\n\n\n\n${YELLOW}[+] Updating Grub & Updating Initramfs [+]\n\n\n"
 sudo update-grub; sudo update-initramfs -u;
 
-printf "\n\n\n${GREEN}[x] Installation Done !!!\n"
+printf "\n\n\n\n${GREEN}[x] Installation Done !!!\n\n\n"
 
-printf "\n\n\n${YELLOW}[~] Wanna Reboot Now !"
-printf "\n\n\t[+] Enter To Continue [CTRL+C] To Cancel..."
+printf "\n\n\n${YELLOW}[~] Wanna Reboot Now !\n\n"
+printf "\n\n\n\t[+] Enter To Continue [CTRL+C] To Cancel...\n\n\n\n"
 read rd3
 
 printf "\n\n\n\t${BLUE}[...] Rebooting In [...] ${RED}\t 5 "
