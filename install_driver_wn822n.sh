@@ -41,7 +41,7 @@ sudo update-grub; sudo update-initramfs -u;
 printf "\n\n\n\n${GREEN}[x] Installation Done !!!\n\n\n"
 
 printf "\n\n\n${YELLOW}[~] Wanna Reboot Now !\n\n"
-printf "\n\n\n\t[+] Enter To Continue [CTRL+C] To Cancel...\n\n\n\n"
+printf "\n\n\n\t[+] Enter To Reboot Or [CTRL+C] To Cancel...\n\n\n\n"
 read rd3
 
 printf "\n\n\n\t${BLUE}[...] Rebooting In [...] ${RED}\t 5 "
