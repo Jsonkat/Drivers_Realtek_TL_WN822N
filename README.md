@@ -4,7 +4,7 @@
 
 
 
-# [+]  Tested On Kali And Ubuntu ; Model <:> TP-LINK WN822N (V5)
+# [+]  Tested On Kali And Ubuntu ; Model <:> TP-LINK TL - WN822N (V5)
 
 
 
