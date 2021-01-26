@@ -39,7 +39,7 @@ printf "\n\n\n${YELLOW}[+] Updating Grub & Updating Initramfs [+]\n\n\n"
 sudo update-grub; sudo update-initramfs -u;
 
 printf "\n\n\n${GREEN}[x] Installation Done !!!\n"
-printf "\n\n\n\t${BLUE}Rebooting In... ${RED}5 "
+printf "\n\n\n\t${BLUE}[...] Rebooting In [...] ${RED}\t 5 "
 sleep 1
 printf "\t 4 "
 sleep 1
