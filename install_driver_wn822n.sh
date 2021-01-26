@@ -27,7 +27,7 @@ printf "\n${MAGEN}[*] Current Directory :: $(pwd) \n\n${WHITE}$(ls)\n"
 printf "\n\n\n${YELLOW}[+] Enter To Continue...."
 read rd2
 
-printf "\n\n\n${GREEN}[*]Installing Drivers... \n\n\n"
+printf "\n\n\n${GREEN}[*] Installing Drivers... \n\n\n"
 sudo dkms add .;
 sudo dkms install rtl8192eu/1.0;
 
