@@ -1,7 +1,12 @@
 
 
 # [+]  I Found This Driver By Random Googling Hope It Helps  [+]
+
+
+
 # [+]  Tested On Kali And Ubuntu ; Model <:> TP-LINK WN822N (V5)
+
+
 
 
 # Installation...
@@ -11,9 +16,15 @@ chmod +x install_driver_wn822n.sh
 ./install_driver_wn822n.sh
 
 
+
+
+
 # Original Repo
 
 git clone https://github.com/Mange/rtl8192eu-linux-driver
+
+
+
 
 
 
@@ -85,6 +96,9 @@ that it can used to rebuild the module on kernel upgrades.
     ```
      
     You should see the line ```driver=8192eu```
+    
+    
+    
     
 
 # Uninstall...
