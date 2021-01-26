@@ -21,7 +21,7 @@ chmod +x install_driver_wn822n.sh
 
 # Original Repo
 
-git clone https://github.com/Mange/rtl8192eu-linux-driver
+https://github.com/Mange/rtl8192eu-linux-driver
 
 
 
