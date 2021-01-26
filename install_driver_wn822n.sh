@@ -27,7 +27,7 @@ printf "\n${MAGEN}[*] Current Directory :: $(pwd) \n\n${WHITE}$(ls)\n"
 printf "\n\n\n${YELLOW}[+] Enter To Continue...."
 read rd2
 
-printf "\n\n\n${GREEN}Installing Drivers... \n\n\n"
+printf "\n\n\n${GREEN}[*]Installing Drivers... \n\n\n"
 sudo dkms add .;
 sudo dkms install rtl8192eu/1.0;
 
@@ -39,7 +39,7 @@ printf "\n\n\n${YELLOW}[+] Updating Grub & Updating Initramfs [+]\n\n\n"
 sudo update-grub; sudo update-initramfs -u;
 
 printf "\n\n\n${GREEN}[x] Installation Done !!!\n"
-printf "\n\n\n${BLUE}Rebooting In ${RED}5 "
+printf "\n\n\n\t${BLUE}Rebooting In... ${RED}5 "
 sleep 1
 printf "\t 4 "
 sleep 1
@@ -47,6 +47,6 @@ printf "\t 3 "
 sleep 1
 printf "\t 2 "
 sleep 1
-printf "\t 1..."
+printf "\t 1"
 sleep 1
 sudo systemctl reboot -i;
