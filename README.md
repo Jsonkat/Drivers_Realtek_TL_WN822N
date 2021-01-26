@@ -38,50 +38,52 @@ https://github.com/Mange/rtl8192eu-linux-driver
 
 # If Auto Install Fails Install It Manually...
 
-     ```shell
-1.   $ sudo apt-get install git linux-headers-generic build-essential dkms;
-     ```
-     
-     ```shell
-2.   $ git clone https://github.com/Mange/rtl8192eu-linux-driver;
-     ```
-     
-     ```shell
-      $ cd rtl8192eu-linux-driver; 
-      ```shell
-      
-     ```shell
-3.   $ sudo dkms add .;
-     ``` 
- 
-     ```shell
-4.   $ sudo dkms install rtl8192eu/1.0;
-     ```
+1.
+```shell
+$ sudo apt-get install git linux-headers-generic build-essential dkms;
+```  
+2.  
+```shell
+$ git clone https://github.com/Mange/rtl8192eu-linux-driver;
+```
+3.
+```shell
+$ cd rtl8192eu-linux-driver; 
+```
+4.      
+```shell
+$ sudo dkms add .;
+``` 
+5.
+```shell
+$ sudo dkms install rtl8192eu/1.0;
+```
+6.
+```shell
+$ echo "blacklist rtl8xxxu" | sudo tee /etc/modprobe.d/rtl8xxxu.conf;
+```
+7.    
+```shell
+$ echo -e "8192eu\n\nloop" | sudo tee /etc/modules;
+```
+8.     
+```shell
+$ echo "options 8192eu rtw_power_mgnt=0 rtw_enusbss=0" | sudo tee /etc/modprobe.d/8192eu.conf;
+```
+9.
+```shell
+$ sudo update-grub; sudo update-initramfs -u;
+```
+10.
+```shell
+$ systemctl reboot -i;
+```
+   Finally reboot the system...
 
-     ```shell
-5.   $ echo "blacklist rtl8xxxu" | sudo tee /etc/modprobe.d/rtl8xxxu.conf;
-     ```
-    
-     ```shell
-6.   $ echo -e "8192eu\n\nloop" | sudo tee /etc/modules;
-     ```
-     
-     ```shell
-7.   $ echo "options 8192eu rtw_power_mgnt=0 rtw_enusbss=0" | sudo tee /etc/modprobe.d/8192eu.conf;
-     ```
-     
-     ```shell
-8.   $ sudo update-grub; sudo update-initramfs -u;
-     ```
-
-     ```shell
-9.   $ systemctl reboot -i;
-     ```
-      ```reboot the system```
-
-     ```shell
-10.  $ sudo lshw -c network;
-     ```
+11.
+```shell
+$ sudo lshw -c network;
+```
        You should see the line ```driver=8192eu```
     
     
