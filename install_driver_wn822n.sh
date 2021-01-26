@@ -41,6 +41,7 @@ printf "\n\n\n${GREEN}[x] Installation Done !!!\n"
 
 printf "\n\n\n${YELLOW}[~] Wanna Reboot Now !"
 printf "\n\n\t[+] Enter To Continue [CTRL+C] To Cancel..."
+read rd3
 
 printf "\n\n\n\t${BLUE}[...] Rebooting In [...] ${RED}\t 5 "
 sleep 1
