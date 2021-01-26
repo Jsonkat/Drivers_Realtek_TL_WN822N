@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# Colors +++
-RED="\e[0;31m"	    # dark red
-BLACK="\e[0;30m"    # dark black
-GREEN="\e[0;32m"    # dark green
-YELLOW="\e[0;33m"   # dark yellow (brown)
-BLUE="\e[0;34m"     # dark blue
-MAGEN="\e[0;35m"    # dark magenta
-CYAN="\e[0;36m"     # dark cyan
-WHITE="\e[0;37m"    # dark white (L.gray)
+RED="\e[0;31m"	  
+BLACK="\e[0;30m"  
+GREEN="\e[0;32m"   
+YELLOW="\e[0;33m"   
+BLUE="\e[0;34m"  
+MAGEN="\e[0;35m" 
+CYAN="\e[0;36m"    
+WHITE="\e[0;37m"  
 
 clear
 printf "\n\n\n\n\t${GREEN}******* Linux Drivers For TP-LINK WN822N(V5) *******\n"
@@ -39,6 +38,10 @@ printf "\n\n\n${YELLOW}[+] Updating Grub & Updating Initramfs [+]\n\n\n"
 sudo update-grub; sudo update-initramfs -u;
 
 printf "\n\n\n${GREEN}[x] Installation Done !!!\n"
+
+printf "\n\n\n${YELLOW}[~] Wanna Reboot Now !"
+printf "\n\n\t[+] Enter To Continue [CTRL+C] To Cancel..."
+
 printf "\n\n\n\t${BLUE}[...] Rebooting In [...] ${RED}\t 5 "
 sleep 1
 printf "\t 4 "
