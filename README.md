@@ -11,6 +11,8 @@
 
 # Installation...
 
+git clone https://github.com/Jsonkat/Drivers_Realtek_WN822N.git
+
 chmod +x install_driver_wn822n.sh
 
 ./install_driver_wn822n.sh
